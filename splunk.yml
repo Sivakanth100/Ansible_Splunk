@@ -1,4 +1,8 @@
-- hosts: monitoring
-  sudo: True
+---
+- hosts: "{{ Splunk_Server_Name }}"
+  connection: local
+  become: yes
+  become_method: sudo
+  gather_facts: no
   roles:
     - splunk
