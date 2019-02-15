@@ -41,6 +41,6 @@
   shell: /opt/splunk/bin/splunk enable boot-start
 - name: Clean up splunk installation package RPM file
 
-- name: Deletion of Splunk server installation package
-  shell: rm -rf /"{{ splunk_installation_temp_path }}/{{ splunk_version_name }}"
-  when: splunk_installer_present.stat.exists == true
+#- name: Deletion of Splunk server installation package
+#  shell: rm -rf /"{{ splunk_installation_temp_path }}/{{ splunk_version_name }}"
+#  when: splunk_installer_present.stat.exists == true
